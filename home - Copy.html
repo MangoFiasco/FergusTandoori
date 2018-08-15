@@ -1,0 +1,86 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<script language="JavaScript" type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	function testScroll(ev){
+    	if(window.pageYOffset>300){
+    		$('.navBar').stop().animate(
+    			{left: '0'} ,450,'linear'
+    		);
+    		$('.menuButton').fadeOut('slow');
+    		
+    	}else{
+    		$('.navBar').stop().animate(
+    			{left: '-300px'} ,450,'linear'
+    		);
+    		$('.menuButton').fadeIn('slow');
+    		
+    	}
+
+	}
+	window.onscroll=testScroll
+	
+
+	window.onload = function() {
+ 
+	    $("#lunchbutt").click(function() {
+			 $('html,body').animate({
+	        scrollTop: $("#menuLunch").offset().top},
+	        'slow');
+		});
+ 
+	};
+</script>
+<body>
+	<div class="navBar">
+		<div class="navBarButton"> HOME
+		</div>
+		<div class="navBarButton"> LUNCH
+		</div>
+		<div class="navBarButton"> DINNER
+		</div>
+		<div class="navBarButton"> TAKEOUT
+		</div>
+		<div class="navBarButton"> ABOUT
+		</div>
+	</div>
+	<div class="banner">
+		<div class="containerLogo">
+			<div class="floatingDiv">
+			</div>
+			<div class="floatingDiv2"> 
+					<b>fergus tandoori grill</b></br> 
+					<div name="homeMenu"class="buttonContainer">
+						<div class="menuButton" id="lunchbutt"> Lunch </div>
+						<div class="menuButton"> Dinner </div>
+						<div class="menuButton"> Takeout </div>
+						<div class="menuButton"> About </div>
+					</div>
+			</div>
+		</div>
+				
+	</div>
+
+
+	<div> TEST asd assad asd 
+	asd sa
+	d s
+	ad </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> 
+	 sa
+	 d sa
+	 d sad sad sa
+	 d 
+	 sad
+	  as
+	  d as
+	  d 
+	  </div>
+	  <div id="menuLunch">
+	  	SDAO:JFHDSO</br> 
+	  	F DSOFH DSJF DSFSDFBJODSJFSDHKFJBKDSFHJDSHJFDSBHFDS</br> 
+	  	dsadasdsasadsad</br> 
+	  	asdasdasdasdas</br> 
+	  	asdasdasdasd</br> 
+	  </div>
+</body>

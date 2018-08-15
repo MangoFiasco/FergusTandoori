@@ -1,0 +1,342 @@
+/* CSS - Cascading Style Sheet */
+/* Palette color codes */
+/* Palette URL: http://paletton.com/#uid=50J0G0ktHwo4sYKjxFv-1kSVG1Z */
+
+/* Feel free to copy&paste color codes to your application */
+
+
+/* As hex codes */
+@media screen and (max-device-width: 480px){
+  body{
+    -webkit-text-size-adjust: none;
+  }
+}
+.color-primary-0 { color: #FF9B12 }	/* Main Primary color */
+.color-primary-1 { color: #FFF0DC }
+.color-primary-2 { color: #FFBE64 }
+.color-primary-3 { color: #A66000 }
+.color-primary-4 { color: #100900 }
+
+.color-secondary-1-0 { color: #FFD512 }	/* Main Secondary color (1) */
+.color-secondary-1-1 { color: #FFF9DC }
+.color-secondary-1-2 { color: #FFE464 }
+.color-secondary-1-3 { color: #A68900 }
+.color-secondary-1-4 { color: #100D00 }
+
+.color-secondary-2-0 { color: #FF2412 }	/* Main Secondary color (2) */
+.color-secondary-2-1 { color: #FFDEDC }
+.color-secondary-2-2 { color: #FF6F64 }
+.color-secondary-2-3 { color: #A60C00 }
+.color-secondary-2-4 { color: #100100 }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+width:100%;
+
+display: table;
+}
+
+.container {
+  top: 0;
+  left: 0;
+  background-image: url("p2.png");
+  width: 100%;
+  height: 100%;
+}
+
+.banner{
+   -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+  background-color: #f4ce37;
+  background-repeat: no-repeat;	
+  background: url("p2.png")no-repeat scroll center transparent;
+  background-repeat:no-repeat;
+  background-position:absolute;
+  height: 950px;
+  width: 100%;
+}
+
+body {
+	background-color: #FFF0DC;
+    font-family: helvetica;
+}
+
+nav {
+  width: 14%;
+  height: 100%;
+  background-color: #A66000 ; 
+}
+
+.flex-column {
+  -webkit-flex: 1;
+          flex: 1;
+}
+.navBar{
+	position: fixed;
+	left: -500px;
+	top: 15%;
+	width: 100px;
+	background-color:#FF9B12;
+	opacity: 0.5;
+	-o-transition:opacity .2s ease-in;
+  	-ms-transition:opacity .2s ease-in; 
+  	-moz-transition:opacity .2s ease-in;
+  	-webkit-transition:opacity .2s ease-in;
+  	z-index: 500;
+
+}
+.navBar:hover{
+	opacity: 1;
+
+}
+
+.navBarButton{
+	padding: 10px;
+	padding-left: 20px;
+}
+.navBarButton:hover{
+	background-color:#FFF0DC;
+}
+.navbutton{
+	border-color: #FF6F64;
+	border-width: 100px;
+	background-color:#FF2412;
+	width: 60%;
+	margin-left: 15%;
+	padding-left: 5%;
+	padding-right: 5%;
+	left:100px;
+	text-align: center;
+	height: 15%;
+}
+
+.containerLogo{
+	margin: auto;
+    width: 950px;
+   	padding-top: 50px;
+   	padding-right: 0px;
+   	padding-left: 0px;
+   	padding-bottom: 80px;
+    text-align: center;
+    top: 300px;
+    position: relative;
+    font-family: helvetica;
+    font-size: 50pt;
+	font-weight: bold;
+}
+.floatingDiv{
+	background-color: #FFF0DC;
+	width: 950px;
+	opacity: .6;
+	position: absolute;
+	padding: 110px 0;
+}
+
+.floatingDiv2{
+	font-weight: bold;
+	margin: auto;
+    width: 950px;
+    color:#540909;
+    padding-top: 50px;
+   	padding-right: 0px;
+   	padding-left: 0px;
+   	padding-bottom: 80px;
+    text-align: center;
+    position: absolute;
+    top: 40%; 
+    font-size: 50pt;
+}
+.buttonContainer{
+	width: 100%;
+	margin-top: 20px;
+	margin-left:auto;
+    margin-right:auto;
+    position: relative;
+}
+.menuButton{
+	color: #FFF0DC;
+	font-size: 25px;
+	width: 20%;
+	float: left;
+	margin-left: 38px;
+    text-align: center;
+    cursor: pointer; 
+    background-color: #540909;
+    padding-top: 5px;
+    padding-bottom: 5px;
+	font-weight: normal;
+  	-o-transition:color .2s ease-out, background .2s ease-in;
+  	-ms-transition:color .2s ease-out, background .2s ease-in;
+  	-moz-transition:color .2s ease-out, background .2s ease-in;
+  	-webkit-transition:color .2s ease-out, background .2s ease-in;
+}
+.disclaimer{
+	font-family: helvetica;
+	text-align: center;
+  	margin:auto;
+  	font-size: 15px;
+  	color:#540909 ;
+}
+.menuButton:hover{
+   	background-color:#FFDEDC;
+   	color:#540909;
+	font-weight: bold;
+}
+.menu{
+	font-family: helvetica;
+	text-align: center;
+  	margin:auto;
+  	padding-bottom: 30px;
+}
+.menuHead{
+	display: inline-block;
+	left: 25%;
+	width: 300px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-weight: normal;
+	margin: 40px;
+	top: 0px;
+	vertical-align:top;
+}
+.menuHead h1{
+	color: #540909;
+	font-family: inherit;
+	font-weight: bold;
+	font-size: 20px;
+	margin:0px;
+	line-height:0px;
+}
+.menuHead h2{
+	font-family: inherit;
+	font-weight: normal;
+	font-size: 12px;
+	margin:0px;
+}
+.menuHead h3{
+	font-family: inherit;
+	font-weight: bold;
+	font-size: 12px;
+	margin:0px;
+	line-height:0px;
+	line-height:12px;
+
+}
+.title{
+	color: #540909;
+    font-family: helvetica;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-image: url("titleimg.png");
+  	display: table;
+}
+.title2{
+	color: #FFF0DC;;
+    font-family: helvetica;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    margin-top: 15px;
+    background-color:  #540909;
+}
+ul.leaders {
+	text-align: left;
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #540909;
+  
+}
+ul.leaders li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . ";
+}
+ul.leaders span:first-child {
+    padding-right: 0.33em;
+    background: #FFF0DC;
+}
+ul.leaders span + span {
+    float: right;
+    padding-left: 0.33em;
+    background: #FFF0DC;
+}
+
+ul.noLead{
+	text-align: left;
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #540909;
+    text-align: justify
+}
+ul.noLead li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:"";
+}
+ul.noLead span:first-child {
+    padding-right: 0.33em;
+    background: #FFF0DC;
+}
+ul.noLead span +br+ span {
+	font-weight: normal;
+    padding-left: 1.8em;
+    background: #FFF0DC;
+}
+ul.noLead span +br+ span+span {
+	font-weight: normal;
+	float: right;
+    padding-left: 1.8em;
+    background: #FFF0DC;
+}
+.picture{
+	float: left;
+	position: absolute;
+	margin: 30px; 
+}

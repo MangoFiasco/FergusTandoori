@@ -1,0 +1,532 @@
+
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<script language="JavaScript" type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	function testScroll(ev){
+		if(window.pageYOffset>300){
+			$('.navBar').stop().animate(
+				{left: '0'} ,450,'linear'
+				);
+			$('.menuButton').fadeOut('slow');
+
+		}else{
+			$('.navBar').stop().animate(
+				{left: '-300px'} ,450,'linear'
+				);
+			$('.menuButton').fadeIn('slow');
+
+		}
+
+	}
+	window.onscroll=testScroll
+	window.onload = function() {
+
+		$("#lunchbutt").click(function() {
+			$('html,body').animate({
+				scrollTop: $("#menuLunch").offset().top},
+				'slow');
+		});
+		$("#dinbutt").click(function() {
+			$('html,body').animate({
+				scrollTop: $("#menuDinner").offset().top},
+				'slow');
+		});
+		$("#takebutt").click(function() {
+			$('html,body').animate({
+				scrollTop: $("#menuDinner").offset().top},
+				'slow');
+		});
+		$("#aboutbutt").click(function() {
+			$('html,body').animate({
+				scrollTop: $("#about").offset().top},
+				'slow');
+		});
+		$("#homebutt").click(function() {
+			$('html,body').animate({
+				scrollTop: 0},
+				'slow');
+		});
+		$("#lunchbutt2").click(function() {
+			$('html,body').animate({
+				scrollTop: $("#menuLunch").offset().top},
+				'slow');
+		});
+		$("#dinbutt2").click(function() {
+			$('html,body').animate({
+				scrollTop: $("#menuDinner").offset().top},
+				'slow');
+		});
+		$("#aboutbutt2").click(function() {
+			$('html,body').animate({
+				scrollTop: $("#about").offset().top},
+				'slow');
+		});
+	};
+</script>
+<body>
+	<div class="navBar">
+		<div class="navBarButton" id="homebutt"> HOME
+		</div>
+		<div class="navBarButton" id="lunchbutt2"> LUNCH
+		</div>
+		<div class="navBarButton" id="dinbutt2"> DINNER
+		</div>
+		<div class="navBarButton" id="aboutbutt2"> ABOUT
+		</div>
+	</div>
+	<div class="banner">
+		<div class="containerLogo">
+			<div class="floatingDiv">
+			</div>
+			<div class="floatingDiv2"> 
+				<b>fergus tandoori grill</b></br> 
+				<div name="homeMenu"class="buttonContainer">
+					<div class="menuButton" id="lunchbutt"> Lunch </div>
+					<div class="menuButton" id="dinbutt"> Dinner </div>
+					<div class="menuButton" id="takebutt"> Takeout </div>
+					<div class="menuButton" id="aboutbutt"> About </div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div  id="menuLunch" class="title">
+		Lunch Specials
+	</div>
+	<div  class="menu">
+		<div class="picture"></div>
+		<span class="menuHead">
+			<h1>Soup of the Day!</h1></br>
+			<h2>Served with fresh </br>Naan bread</h2></br>
+			<h3>$7.99</h3>
+		</span>
+		<span class="menuHead">
+			<h1>Chef's Special</h1></br>
+			<h2>Tandoori Chicken </br>Salad</h2></br>
+			<h3>$6.99</h3>
+		</span>
+	</div>
+	<div  class="menu">
+		<span class="menuHead">
+			<h1>Chef's Sprcial Vegetable </h1></br><h1>Combo</h1></br>
+			<h2>Two vegetables served with rice, </br>Naan, and salad</h2></br>
+			<h3>$11.99</h3>
+		</span>	
+	</div>
+	<div  class="menu">
+		<span class="menuHead">
+			<ul class=leaders>
+				<li><span>Mixed Platter</span>
+					<span>$11.99</span>
+				</li>
+				<li><span>Tandoori Special</span>
+					<span>$12.99</span>
+				</li>
+				<li><span>Chicken Special</span>
+					<span>$12.99</span>
+				</li>
+				<li><span>Lamb Special</span>
+					<span>$13.99</span>
+				</li>
+				<li><span>Beef Special</span>
+					<span>$12.99</span>
+				</li>
+				<li><span>Seafood Special</span>
+					<span>$13.99</span>
+				</li>
+			</ul>
+		</span>	
+	</div>
+	<div id="menuDinner" class="title">
+		Dinner and Takeout Menu
+	</div>
+	<div class="menu" >
+		<span class="menuHead" > <div style="background-color:#540909;padding:15px 0px 0px  0px; margin-bottom:20px;"><h1 style="color:#FFF0DC;">Appetizers</h1></br></div>
+			<ul class=leaders>
+				<li><span>Vegetable Samosa</span>
+					<span>$3.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Deep fried patties stuffed with peas, potatoes, and Indian spices</div>
+				</li>
+				<li><span>Vegetable Pakora</span>
+					<span>$5.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">An assortment of fresh vegetables deep fried in cheakpeas battered served with salad and sauce</div>
+				</li>
+				<li><span>Onion Bhajee</span>
+					<span>$5.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Freshly diced onions battered and deep-fried, mildly spiced, served with salad and sauces.</div>
+				</li>
+				<li><span>Chicken Tikka</span>
+					<span>$6.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Boneless chicken breast marinated in yogurt with spices for a day adn cooked in tandoor</div>
+				</li>
+				<li><span>Chicken Pakora</span>
+					<span>$6.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Boneless chicken tikka dipped in cheakpeas batter and deep fried.</div>
+				</li>
+				<li><span>Sheek Kabab</span>
+					<span>$6.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Minced meat blended with special spices and herbs. Cooked on a skewer in Tandoor.</div>
+				</li>
+				<li><span>Mixed Platter</span>
+					<span>$12.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Samosa, Pakora, Onion Bhajees, Sheek Kabab, and Chicken Tikka .Served on a sizzler.</div>
+				</li>
+			</ul>
+		</span>
+		<span class="menuHead"><div style="background-color:#540909;padding:15px 0px 0px  0px; margin-bottom:20px;"><h1 style="color:#FFF0DC;">Soup and Salads</h1></br></div>
+			<ul class=leaders>
+				<li><span>Mulligatawany Soup</span>
+					<span>$5.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">An authentic Indian soup prepared with lentils, chicken, lemon juice, herbs, and spices</div>
+				</li>
+				<li><span>Lentil Soup</span>
+					<span>$4.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Vegetarian soup prepared with lentils, lemon juice, herbs, and spices</div>
+				</li>
+				<li><span>Garden Salad</span>
+					<span>$5.99</span>
+				</li>
+				<li><span>Tandoori Chicken Salad</span>
+					<span>$6.99</span>
+				</li>
+			</ul>	
+		</span>
+		<span class="menuHead"><div style="background-color:#540909;padding:15px 0px 0px  0px; margin-bottom:20px;"><h1 style="color:#FFF0DC;">Side Order</h1></br></div>
+			<ul class=leaders>
+				<li><span>Raita</span>
+					<span>$2.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Whipped Yogurt with onion & cucumber.</div>
+				</li>
+				<li><span>Mango Chutney</span>
+					<span>$2.99</span>
+				</li>
+				<li><span>Mixed Pickle</span>
+					<span>$1.99</span>
+				</li>
+				<li><span>Papadum</span>
+					<span>$1.99</span>
+				</li>
+			</ul>	
+		</span>
+	</div>
+	<div class="disclaimer" ><span >*If you order takeout every meat dish is served with rice or naan of your choice</span></div>
+	<div class="menu" >
+		<span class="menuHead"><div style="background-color:#540909;padding:15px 0px 0px  0px; margin-bottom:20px;"><h1 style="color:#FFF0DC;">Tandoori Dishes *</h1></br></div>
+			<div style="margin-left:10px;margin-bottom:14px;font-weight:normal;font-size:12px;"> All tandoori dishes are thoroughly marinated in a delightfully delicate spiced yogurt to tenderize the meat and give it a seductive flavour and tantalizing aroma. These are cooked on a charcoal fire in a specially designed clay oven.</br></div>
+			<ul class=leaders>
+				<li><span>Tandoori Chicken</span>
+					<span>$12.99</span>
+				</li>
+				<li><span>Chicken Tikka</span>
+					<span>$13.99</span>
+				</li>
+				<li><span>Sheek Kabab</span>
+					<span>$13.99</span>
+				</li>
+				<li><span>Shrimp Tikka</span>
+					<span>$17.95</span>
+				</li>
+				<li><span>Tandoori Mixed Grill</span>
+					<span>$16.95</span>
+				</li>
+			</ul>	
+		</span>
+	</div>
+	<div class="menu" >
+	<span class="menuHead"><div style="background-color:#540909;padding:15px 0px 0px  0px; margin-bottom:20px;">
+			<h1 style="color:#FFF0DC;">Seafood Dishes *</h1></br></div>
+			<div style="margin-left:10px;margin-bottom:14px;font-weight:bold;font-size:12px;"> All Seafood Dishes are $16.99</br></div>
+			<ul class=noLead>
+				<li><span>Shrimp Masala</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Shrimp cooked with onion, tomatoe, and fresh cilantro. (Mild) </div>
+				</li>
+				<li><span>Shrimp Sag</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">A medium shrimp curry cooked with spinach and selected spices.</div>
+				</li>
+				<li><span>Shrimp Jalfrezi</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Stir fried shrimp with fresh green chillies, green pepper, tomatoes, fresh cilantro, and garnished with a touch of fresh garlic and ginger. Fairly spicy and hot to taste.</div>
+				</li>
+				<li><span>Shrimp Korma</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">A mild curry cooked in a creamy sauce with almonds and raisins.</div>
+				</li>
+				<li><span>Malai Shrimp</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Shrimp cooked in creamy sauce with almonds.</div>
+				</li>
+				<li><span>Fish Masala</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Fresh seasonal fish cooked with onion, tomato, and fresh cilantro.</div>
+				</li>
+			</ul>	
+		</span>
+		<span class="menuHead"><div style="background-color:#540909;padding:15px 0px 0px  0px; margin-bottom:20px;">
+			<h1 style="color:#FFF0DC;">Chicken Dishes *</h1></br></div>
+			<div style="margin-left:10px;margin-bottom:14px;font-weight:bold;font-size:12px;"> All Chicken Dishes are $14.99</br></div>
+			<ul class=noLead>
+				<li><span>Butter Chicken</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Boneless chicken marinated in yogurt and spices, barbequed in Tandoor and cooked with creamy tomato gravy and butter. Ideal for all.</div>
+				</li>
+				<li><span>Chicken Korma</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">A mild curry cooked in a creamy sauce with almonds and rasin (very mild).</div>
+				</li>
+				<li><span>Chicken Kashmiri</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">A very mild dish cooked with various fresh fruits and creamy sauce with coconuts and ground almonds.</div>
+				</li>
+				<li><span>Chicken Vindaloo</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Boneless chicken cooked with potatoes, lemon juice, and extra red chillies. Extremely hot dish.</div>
+				</li>
+				<li><span>Chicken Tikka Masala</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Tandoori chicken breast pieces cooked with onions, green peppers, tomatoes, and spices.</div>
+				</li>
+				<li><span>Chicken Jalfrezi</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Jalfrezi dishes are cooked with green chillies, ginger, green pepper, and fresh cilantro. Fairly spicy and hot to taste.</div>
+				</li>
+				<li><span>Chicken Madras</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Rich hot sour taste extensively prepared with garlic, lemon juice, red chilli pepper, coconuts, and garnished with fresh cilantro.</div>
+				</li>
+				<li><span>Chicken Dansak</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">A beautiful combination of spices with pineapple, lentils, and garlic; producing a sweet, sour and hot taste garnished with fresh cilantro.</div>
+				</li>
+				<li><span>Chicken Pasanda</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Pieces of chicken marinated in yogurt and spices, and gently casserolled in a creamy sauce. A delicate fragrant and aromatic curry.</div>
+				</li>
+				<li><span>Bhuna Chicken</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Diced chicken gently spiced and cooked with capsicum, peppers, and tomatoes. This is a fairly dry and medium curry.</div>
+				</li>
+				<li><span>Korai Chicken</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Cubed chicken cooked in medium dry gravy with tomatoes, onion, and green peppers.</div>
+				</li>
+				<li><span>Chicken Curry</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Chicken cooked with curry sauce. Simple and easy.</div>
+				</li>
+			</ul>	
+		</span>
+		<span class="menuHead">
+			<div style="background-color:#540909;padding:15px 0px 0px  0px; margin-bottom:20px;"><h1 style="color:#FFF0DC;">Lamb and Beef Dishes *</h1></br></div>
+			<div style="margin-left:10px;margin-bottom:14px;font-weight:bold;font-size:12px;"> Beef: $14.99, Lamb: $15.99</br></div>
+			<ul class=noLead>
+				<li><span>Rogon Josh</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">A special preperation with fresh cilantro, tomatoes puree, garlic, and garnished with lots of tomatoes. (Medium Hot)</div>
+				</li>
+				<li><span>Madras</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Rich hot sour taste extensively prepared with garlic, lemon juice, red chilli pepper, coconuts, and garnished with fresh cilantro.</div>
+				</li>
+				<li><span>Dupiaza</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">A maximum quantity of onion with dozens of spices to produce a medium hot curry.</div>
+				</li>
+				<li><span>Dansak</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">A beautiful combination of spices with pineapple, lentils, and garlic; producing a sweet, sour and hot taste garnished with fresh cilantro.</div>
+				</li>
+				<li><span>Sag Gosht</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Gosht (Meat) cooked with fresh spinach garnished with a touch of garlic, ginger, and coriander.  </div>
+				</li>
+				<li><span>Korai Gosht</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Cubed beef or lamb cooked in medium dry gravy with tomatoes, onions, green peppers, and garnished with fresh cilantro. (Fairly Hot)</div>
+				</li>
+				<li><span>Korma</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">A mild curry cooked in creamy sauce with almonds and raisins. (Very Mild)</div>
+				</li>
+				<li><span>Rezala</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">A medium hot curry flavoured with special aromatic spices.</div>
+				</li>
+			</ul>	
+		</span>
+		<span class="menuHead"><div style="background-color:#540909;padding:15px 0px 0px  0px; margin-bottom:20px;">
+			<h1 style="color:#FFF0DC;">Vegetable Specialties</h1></br></div>
+			<ul class=leaders>
+				<li><span>Daal Tarka</span>
+					<span>$10.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Indian  lentils cooked in butter and spices.</div>
+				</li>
+				<li><span>Aloo Gobi</span>
+					<span>$10.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Potato and cauliflower cooker in spices.</div>
+				</li>
+				<li><span>Sag Aloo</span>
+					<span>$10.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Potato cooked with spinach.</div>
+				</li>
+				<li><span>Chana Masala</span>
+					<span>$10.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Chickpeas cooked in spices.</div>
+				</li>
+				<li><span>Bharta</span>
+					<span>$10.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Exotic egg plant cooked with herbs, tomatoes and various spices.</div>
+				</li>
+				<li><span>Bombay Aloo</span>
+					<span>$10.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Spiced boiled potatoes cooked with roasted chili and onion</div>
+				</li>
+				<li><span>Mushroom Bhajee</span>
+					<span>$10.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Fresh mushrooms cooked in a moderately spiced curry sauce with onion, tomatoes and peas.</div>
+				</li>
+				<li><span>Mixed Vegetables</span>
+					<span>$10.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Fresh garden vegetable cooked in curry sauce.</div>
+				</li>
+				<li><span>Sag Paneer</span>
+					<span>$12.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Spinach cooked with homemade cottage cheese, cooked in spices and butter.</div>
+				</li>
+				<li><span>Matar Paneer</span>
+					<span>$12.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Peas cooked with homemade cottage cheese, cooked in spices and butter.</div>
+				</li>
+				<li><span>Paneer Makhani</span>
+					<span>$12.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Our fresh homemade soft cottage cheese stewed in a creamy tomato gravy.</div>
+				</li>
+				<li><span>Vegetable Korma</span>
+					<span>$12.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Fresh mixed vegetable cooked with mildly spiced almond curry sauce.</div>
+				</li>
+			</ul>
+		</span>
+	</div>
+	<div class="menu" >
+		<span class="menuHead"><div style="background-color:#540909;padding:15px 0px 0px  0px; margin-bottom:20px;">
+			<h1 style="color:#FFF0DC;">Rice Selection</h1></br></div>
+			<ul class=leaders>
+				<li><span>Pulao Rice</span>
+					<span>$3.50</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Rice cooked with cumin, butter,fried onion, and mild spices.</div>
+				</li>
+				<li><span>Peas Pulao</span>
+					<span>$4.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Basmati rice cooked with peas, onions, and almonds.</div>
+				</li>
+				<li><span>Mushroom Rice</span>
+					<span>$5.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Rice cooked with mushrooms and onions</div>
+				</li>
+			</ul>
+		</span>
+		<span class="menuHead"><div style="background-color:#540909;padding:15px 0px 0px  0px; margin-bottom:20px;">
+			<h1 style="color:#FFF0DC;">Indian Bread</h1></br></div>
+			<ul class=leaders>
+				<li><span>Naan</span>
+					<span>$3.50</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Leavened bread of fine flour baked in our tandoor</div>
+				</li>
+				<li><span>Garlic Naan</span>
+					<span>$4.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Naan bread stuffed with garlic</div>
+				</li>
+				<li><span>Keema Naan</span>
+					<span>$5.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Naan bread stuffed with spiced minced meat</div>
+				</li>
+				<li><span>Tandoori Roti</span>
+					<span>$2.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Unleavened whole wheat bread baked in tandoor</div>
+				</li>
+				<li><span>Paratah</span>
+					<span>$3.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Fried layered whole wheat bread.</div>
+				</li>
+				<li><span>Pashawari Naan</span>
+					<span>$5.99</span>
+					<div style="margin-left:10px;font-weight:lighter;font-size:12px;">Stuffed with fruits and almonds.</div>
+				</li>
+			</ul>
+		</span>
+		<span class="menuHead"><div style="background-color:#540909;padding:15px 0px 0px  0px; margin-bottom:20px;">
+			<h1 style="color:#FFF0DC;">Biriyani Dishes</h1></br></div>
+			<div style="margin-left:10px;margin-bottom:14px;font-weight:lighter;font-size:12px;"> Grand festive dishes prepared with basmati rice cooked with vegetable, chicken, beef, lamb, or shrimp.</br></div>
+			<ul class=leaders>
+				<li><span>Vegetable Biriyani</span>
+					<span>$10.99</span>
+				</li>
+				<li><span>Chicken Biriyani</span>
+					<span>$13.99</span>
+				</li>
+				<li><span>Beef Biriyani</span>
+					<span>$13.99</span>
+				</li>
+				<li><span>Lamb Biriyani</span>
+					<span>$14.99</span>
+				</li>
+				<li><span>Shrimp Biriyani</span>
+					<span>$15.99</span>
+				</li>
+
+			</ul>
+		</span>
+	</div>
+	<div class="menu" >
+		
+	</div>
+	<div class="title2">
+		Dinner Combination Specials
+	</div>
+		<div class="menu" style="background-image:url('P3.png');">
+		<span class="menuHead"><div style="background-color:#540909;padding:15px 0px 0px  0px; margin-bottom:20px;"><h1 style="color:#FFF0DC;">Set Meal For One</h1></br></div>
+			<h2 style="color:#540909;font-weight:bold;font-size:20px;">$21.99</h2>
+			<div style="color:#540909;margin-left:10px;margin-bottom:14px;font-weight:bold;font-size:12px;">Vegetable Pakora - Chicken Korma - Pulao Rice - Naan</br></div>
+		</span>
+		<span class="menuHead"><div style="background-color:#540909;padding:15px 0px 0px  0px; margin-bottom:20px;"><h1 style="color:#FFF0DC;">Set Meal For Two</h1></br></div>
+			<h2 style="color:#540909;font-weight:bold;font-size:20px;">$40.99</h2>
+			<div style="color:#540909;margin-left:10px;margin-bottom:14px;font-weight:bold;font-size:12px;">Vegetable Samosa - Butter Chicken - Beef Madras - Chana Masala - Pulao Rice - Naan</br></div>
+		</span>
+		<span class="menuHead"><div style="background-color:#540909;padding:15px 0px 0px  0px; margin-bottom:20px;"><h1 style="color:#FFF0DC;">Set Meal For Three</h1></br></div>
+			<h2 style="color:#540909;font-weight:bold;font-size:20px;">$55.99</h2>
+			<div style="color:#540909;margin-left:10px;margin-bottom:14px;font-weight:bold;font-size:12px;">Vegetable Samosa - Vegetable Pakora - Chicken Korma - Beef Dansak - Vegetable Biriyani - Aloo Gobi - 2 Naan</br></div>
+		</span>
+		<span class="menuHead"><div style="background-color:#540909;padding:15px 0px 0px  0px; margin-bottom:20px;"><h1 style="color:#FFF0DC;">Set Meal For Four</h1></br></div>
+			<h2 style="color:#540909;font-weight:bold;font-size:20px;">$75.99</h2>
+			<div style="color:#540909;margin-left:10px;margin-bottom:14px;font-weight:bold;font-size:12px;">Mixed Platter - Chicken Jalfrezi - Beef Korma - Butter Korma - Vegetable Biriyani - Aloo Gobi - Chana Masala - Pulao Rice - Garlic Naan - Naan</br></div>
+		</span>
+	<div class="disclaimer" >
+<span >Any substitute is subject to price change</span></div>
+	</div>
+	<div id="about" class="title">
+		About
+	</div>
+	<div class="menu" >
+		<span class="menuHead">
+			<div style="background-color:#540909;padding:15px 0px 0px  0px; margin-bottom:20px;">			
+					<h1 style="color:#FFF0DC;">Reservations</h1></br></div>
+					<span style="color:#540909">To reserve a table please contact us at <span style="font-weight:bolder"></br>(519) 787-2304</span></span>
+		</span>
+		<span class="menuHead">
+			<div style="background-color:#540909;padding:15px 0px 0px  0px; margin-bottom:20px;">
+					<h1 style="color:#FFF0DC;">Hours of Operation</h1></br>
+			</div>
+			<ul class=noLead>
+				<li><span>Monday to Thursday</span></br>
+					<span>Lunch</span>
+					<span>11:30 am - 2:30 pm</span>
+				</li>
+				<li><span></span></br>
+					<span>Dinner</span>
+					<span>5:00 pm - 9:00 pm</span>
+				</li>
+				<li><span></span></li>
+				<li><span>Friday to Saturday</span></br>
+					<span>Lunch</span>
+					<span>11:30 am - 2:30 pm</span>
+				</li>
+				<li><span></span></br>
+					<span>Dinner</span>
+					<span>5:00 pm - 10:00 pm</span>
+				</li>
+				<li><span></span></li>
+				<li><span>Sunday</span></br>
+					<span>Dinner</span>
+					<span>1:00 am - 9:00 pm</span>
+				</li>
+			</ul>
+		</span>
+		
+		<span class="menuHead">
+			<div style="background-color:#540909;padding:15px 0px 0px  0px; margin-bottom:20px;">			
+					<h1 style="color:#FFF0DC;">Address</h1></br></div>
+					<span style="color:#540909">We are located at <span style="font-weight:bolder"></br>232 St Andrew St W, Fergus, ON</br></span></span>
+		</span>
+	</div>
+	<div class="menu" >
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.3012805965727!2d-80.38109768420215!3d43.7042875791195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bbe118f0d0d89%3A0x837322a510660588!2s!5e0!3m2!1sen!2sca!4v1510726903321" width="600" height="450" frameborder="3px" style=" margin:100px;border-style: solid;border-width:10px;border-color:#540909;" allowfullscreen></iframe></div>
+</body>
